@@ -1,1 +1,13 @@
-<h1>Lista de facturi</h1>
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Lista facturilor </h1>
+<ol>
+    {{#invoice}}
+        <li>
+           {{id}} {{produse}} {{pretUnitate}} {{nrUnitatiProcurate}} {{pretTotal}}
+        </li>
+    {{/invoice}}
+</ol>
+</body>
+</html>
